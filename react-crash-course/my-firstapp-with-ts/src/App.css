@@ -1,0 +1,26 @@
+.Container{
+  display: flex;
+}
+.Container > div {
+  border: 1px solid rgb(31, 19, 201);
+  padding: 10px;
+}
+.Column1, .Column2, .Column3 {
+  flex: 1;
+}
+.Column1 {
+  background-color: rgb(64, 62, 179);
+  color: antiquewhite;
+}
+.Column2 {
+  background-color: #ddd;
+}
+.Column3 {
+  background-color: rgb(64, 62, 192);
+  color:antiquewhite
+}
+@media (max-width: 768px){
+  .Container{
+    flex-direction: column;
+}
+}
